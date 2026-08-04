@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Splunk Enterprise SIEM Home Lab | CyberLawr</title>
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/project.css">
+</head>
+
+<body class="project-page">
+
+<nav>
+    <h2>CyberLawr</h2>
+    <ul>
+        <li><a href="index.html">← Home</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h1>Splunk Enterprise SIEM Home Lab</h1>
+    <p>
+        This project demonstrates the deployment of Splunk Enterprise 10.4.2 in a home lab to collect,
+        index and investigate Linux security logs using Splunk Processing Language (SPL).
+    </p>
+</section>
+
+<section>
+<h2>Project Overview</h2>
+<p>
+Security Information and Event Management (SIEM) platforms are a core technology used by Security Operations Centres (SOCs). In this project I built a Splunk Enterprise home lab to gain practical experience collecting, indexing and investigating Linux security logs.
+</p>
+</section>
+
+<section>
+<h2>Why I Built This Lab</h2>
+<p>
+I created this lab to gain practical SIEM experience beyond certification study. The project demonstrates log collection, event searching and security investigations using real Linux system logs.
+</p>
+</section>
+
+<section>
+<h2>Lab Environment</h2>
+<ul>
+<li>VMware Workstation</li>
+<li>Ubuntu Linux</li>
+<li>Splunk Enterprise 10.4.2</li>
+<li>Linux /var/log directory</li>
+<li>Index: main</li>
+<li>Splunk Processing Language (SPL)</li>
+</ul>
+</section>
+
+<section>
+<h2>Implementation Summary</h2>
+<p>
+After installing Splunk Enterprise, I configured the administrator account and added the <strong>/var/log</strong> directory using continuous monitoring. Splunk successfully indexed more than 33,000 Linux events for investigation and analysis.
+</p>
+</section>
+
+<section>
+<h2>Key SPL Searches</h2>
+<pre><code>index=main
+index=main | stats count
+index=main | top source
+index=main | top user
+index=main | top host
+index=main | top sourcetype
+index=main failed
+index=main accepted
+index=main sudo</code></pre>
+</section>
+
+<section>
+<h2>Project Screenshots</h2>
+
+<div class="gallery">
+
+<figure>
+<img src="assets/images/splunk/01_Splunk_Top_Source.png" alt="Index main">
+<figcaption>Figure 1 — Viewing indexed events.</figcaption>
+</figure>
+
+<figure>
+<img src="assets/images/splunk/02_Splunk_Index_Main.png" alt="Top Source">
+<figcaption>Figure 2 — Top log sources.</figcaption>
+</figure>
+
+<figure>
+<img src="assets/images/splunk/03_Splunk_Stats_Count.png" alt="Stats Count">
+<figcaption>Figure 3 — Total indexed event count.</figcaption>
+</figure>
+
+<figure>
+<img src="assets/images/splunk/04_Splunk_Top_Source_Type.png" alt="Top Sourcetype">
+<figcaption>Figure 4 — Top source types.</figcaption>
+</figure>
+
+<figure>
+<img src="assets/images/splunk/05_Splunk_Failed_Log.png" alt="Failed Search">
+<figcaption>Figure 5 — Failed authentication investigation.</figcaption>
+</figure>
+
+<figure>
+<img src="assets/images/splunk/06_Successful_login_captured.png" alt="Sudo Activity">
+<figcaption>Figure 6 — Administrative sudo activity.</figcaption>
+</figure>
+
+</div>
+</section>
+
+<section>
+<h2>Conclusion</h2>
+<p>
+Building this lab strengthened my understanding of SIEM deployment, Linux log analysis, authentication monitoring and security investigations using Splunk Enterprise.
+</p>
+</section>
+
+<section style="text-align:center;">
+<a href="index.html" class="btn">← Back to Portfolio</a>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nmap Enumeration Project | CyberLawr</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/project.css">
+
+</head>
+
+<body class="project-page">
+
+<nav>
+
+    <h2>CyberLawr</h2>
+
+    <ul>
+        <li><a href="index.html">← Home</a></li>
+    </ul>
+
+</nav>
+
+<section>
+
+    <h1>Nmap Windows Server Enumeration Project</h1>
+
+    <p>
+        This project documents my first complete Windows Server enumeration exercise
+        using Nmap and the Nmap Scripting Engine (NSE). The objective was to perform
+        professional reconnaissance and service enumeration using a structured
+        methodology rather than simply executing individual commands.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Project Overview</h2>
+
+    <p>
+        As someone transitioning into cybersecurity, I wanted practical experience
+        that complements my certifications. This project demonstrates my ability
+        to identify services, analyze network information and document findings
+        professionally.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Why I Built This Lab</h2>
+
+    <p>
+        Practical experience is essential in cybersecurity. I created this home
+        lab to gain hands-on experience using Nmap for reconnaissance and
+        enumeration while learning how cybersecurity professionals assess
+        enterprise systems.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Lab Environment</h2>
+
+    <ul>
+        <li>Kali Linux Virtual Machine (Attacker)</li>
+        <li>Windows Server 2019 Virtual Machine (Target)</li>
+        <li>Nmap 7.95</li>
+        <li>Nmap Scripting Engine (NSE)</li>
+        <li>VirtualBox Home Lab</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Methodology</h2>
+
+    <ol>
+        <li>Identify the target system.</li>
+        <li>Perform host discovery.</li>
+        <li>Scan for open ports.</li>
+        <li>Identify running services.</li>
+        <li>Determine operating system information.</li>
+        <li>Run Nmap NSE scripts.</li>
+        <li>Document every finding.</li>
+    </ol>
+
+</section>
+
+<section>
+
+    <h2>Enumeration Results</h2>
+
+    <p>
+        The assessment successfully identified Windows services including:
+    </p>
+
+    <ul>
+        <li>RPC</li>
+        <li>NetBIOS</li>
+        <li>SMB</li>
+        <li>LDAP</li>
+        <li>Kerberos</li>
+        <li>RDP</li>
+        <li>WinRM</li>
+        <li>Microsoft HTTPAPI/2.0</li>
+    </ul>
+
+    <p>
+        Multiple NSE scripts were executed to enumerate services and gather
+        additional host information. No significant vulnerabilities were
+        identified within the lab environment.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Challenges</h2>
+
+    <p>
+        During testing, the Windows Server virtual machine received a different
+        IP address which caused several scans to fail. After validating the
+        environment and confirming connectivity, the enumeration completed
+        successfully. This reinforced the importance of verifying the lab before
+        assuming a security issue exists.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Key Lessons Learned</h2>
+
+    <ul>
+        <li>Follow a repeatable methodology.</li>
+        <li>Document every step.</li>
+        <li>Validate connectivity first.</li>
+        <li>Interpret scan results professionally.</li>
+        <li>Use NSE scripts for deeper enumeration.</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Project Screenshots</h2>
+
+    <p>
+        The screenshots below demonstrate the key stages of the enumeration process.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+
+            <img src="assets/images/nmap/Nmap_A.png"
+                 alt="Nmap Aggressive Scan">
+
+            <figcaption>
+                Figure 1 — Nmap Aggressive Scan (-A) showing operating system detection,
+                service versions and NSE script results.
+            </figcaption>
+
+        </figure>
+
+        <figure>
+
+            <img src="assets/images/nmap/nmap_sc.png"
+                 alt="Nmap Default Script Scan">
+
+            <figcaption>
+                Figure 2 — Nmap Default Script Scan (-sC) identifying Windows services,
+                SMB configuration and host information.
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Looking Ahead</h2>
+
+    <p>
+        This project marks the beginning of my practical cybersecurity portfolio.
+        My next objective is to expand my network monitoring skills through
+        Wireshark packet analysis and SOC investigations.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        Completing this project significantly improved my confidence in using
+        Nmap, interpreting scan results and documenting technical findings.
+        It represents an important milestone in my journey toward becoming
+        a Junior SOC Analyst.
+    </p>
+
+</section>
+
+<section style="text-align:center;">
+
+    <a href="index.html" class="btn">
+        ← Back to Portfolio
+    </a>
+
+</section>
+
+</body>
+
+</html>

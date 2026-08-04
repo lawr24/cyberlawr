@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Professional Certifications | CyberLawr</title>
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/project.css">
+
+<style>
+
+.modal{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+padding:40px;
+cursor:pointer;
+}
+
+.modal img{
+max-width:90%;
+max-height:90%;
+border-radius:10px;
+box-shadow:0 0 30px rgba(0,255,170,.4);
+cursor:default;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:35px;
+font-size:42px;
+font-weight:bold;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+.close:hover{
+color:#00ff99;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:contain;
+background:#111;
+padding:12px;
+border-radius:8px;
+margin-bottom:15px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card img:hover{
+transform:scale(1.03);
+}
+
+</style>
+
+</head>
+
+<body class="project-page">
+
+<nav>
+
+<h2>
+<a href="index.html" class="logo">CyberLawr</a>
+</h2>
+
+<ul>
+<li><a href="index.html">← Home</a></li>
+</ul>
+
+</nav>
+
+<section>
+
+<h1>Professional Certifications</h1>
+
+<p>
+These industry-recognised certifications demonstrate my commitment to continuous learning in information technology, networking, cybersecurity and security operations. They complement the practical projects showcased throughout this portfolio.
+</p>
+
+</section>
+
+<section>
+
+<h2>Certification Overview</h2>
+
+<p>
+Click any certificate to view it.
+</p>
+
+</section>
+
+<section>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="assets/images/certificates/comptia_tech.jpg"
+alt="CompTIA Tech+"
+onclick="openModal(this.src)">
+
+<h3>🏆 CompTIA Tech+</h3>
+
+<p>
+Foundational IT concepts, hardware, software, networking and cybersecurity fundamentals.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/certificates/comptia_aplus.jpg"
+alt="CompTIA A+"
+onclick="openModal(this.src)">
+
+<h3>🖥 CompTIA A+</h3>
+
+<p>
+Professional certification covering computer hardware, operating systems, troubleshooting and IT support.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/certificates/comptia_network.jpg"
+alt="CompTIA Network+"
+onclick="openModal(this.src)">
+
+<h3>🌐 CompTIA Network+</h3>
+
+<p>
+Networking concepts, routing, switching, wireless networking and network security.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/certificates/comptia_security.jpg"
+alt="CompTIA Security+"
+onclick="openModal(this.src)">
+
+<h3>🔐 CompTIA Security+</h3>
+
+<p>
+Risk management, threats, vulnerabilities, security operations and incident response.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="assets/images/certificates/career_essentials.jpg"
+alt="Microsoft Career Essentials"
+onclick="openModal(this.src)">
+
+<h3>☁ Microsoft Career Essentials</h3>
+
+<p>
+Microsoft and LinkedIn learning pathway covering cybersecurity fundamentals and cloud security concepts.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Professional Development</h2>
+
+<p>
+I continue to expand my knowledge through practical home lab projects, hands-on cybersecurity exercises and continuous professional learning. My goal is to combine recognised certifications with real-world technical experience as I progress toward becoming a Junior SOC Analyst.
+</p>
+
+</section>
+
+<section style="text-align:center;margin-bottom:60px;">
+
+<a href="index.html" class="btn">
+← Back to Portfolio
+</a>
+
+</section>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+
+<span class="close">&times;</span>
+
+<img id="modalImage" src="" alt="Certificate">
+
+</div>
+
+<script>
+
+function openModal(image){
+
+document.getElementById("imageModal").style.display="flex";
+document.getElementById("modalImage").src=image;
+
+}
+
+function closeModal(){
+
+document.getElementById("imageModal").style.display="none";
+
+}
+
+document.getElementById("modalImage").onclick=function(event){
+
+event.stopPropagation();
+
+};
+
+</script>
+
+</body>
+
+</html>

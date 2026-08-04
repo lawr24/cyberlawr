@@ -1,24 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Lawrence Azegbea | Cybersecurity Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
 
+<nav aria-label="Main Navigation">
+
+    <h2>
+    <a href="index.html" class="logo">CyberLawr</a>
+</h2>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+
+        <!-- UPDATED -->
+        <li><a href="certifications.html">Certifications</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <img src="assets/images/profile.png"
+         alt="Lawrence Azegbea"
+         class="profile-img">
+
     <h1>Lawrence Azegbea</h1>
 
-    <h2>IT Support | Service Desk | Junior SOC Analyst | Cybersecurity Professional</h2>
+    <h2>IT Support Specialist | Service Desk | Aspiring SOC Analyst | Cybersecurity Professional</h2>
 
     <p>
-        Welcome to my professional cybersecurity portfolio.
+        Building practical cybersecurity skills through hands-on home lab projects involving
+        Windows Server, Linux, Active Directory, Nmap, Wireshark,
+        Microsoft Sentinel and Splunk.
     </p>
 
-    <script src="script.js"></script>
+    <div class="hero-buttons">
+
+        <a href="#projects" class="btn">
+            View My Projects
+        </a>
+
+        <a href="assets/Lawrence_Azegbea_CV.pdf"
+           class="btn"
+           download>
+            Download My CV
+        </a>
+
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="about-card">
+
+        <p>
+            I am an aspiring Junior SOC Analyst based in Ireland with a background in IT Support and practical cybersecurity home labs.
+        </p>
+
+        <p>
+            I enjoy building enterprise-style lab environments, investigating network traffic, performing security assessments and documenting each project professionally.
+        </p>
+
+        <p>
+            My current focus includes Windows Server, Linux Administration, Active Directory, Nmap, Wireshark, Microsoft Sentinel, Splunk and Microsoft Azure.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🖥 Windows Server</h3>
+            <p>Windows Server 2019, Active Directory, Group Policy</p>
+        </div>
+
+        <div class="card">
+            <h3>🐧 Linux</h3>
+            <p>Ubuntu, Kali Linux, Bash, User &amp; File Administration</p>
+        </div>
+
+        <div class="card">
+            <h3>📡 Networking</h3>
+            <p>Nmap, Wireshark, TCP/IP, DNS, HTTP</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡 SIEM</h3>
+            <p>Microsoft Sentinel, Splunk, Log Analysis</p>
+        </div>
+
+        <div class="card">
+            <h3>☁ Cloud</h3>
+            <p>Microsoft Azure Virtual Machines</p>
+        </div>
+
+        <div class="card">
+            <h3>🔐 Security</h3>
+            <p>CompTIA Security+, TryHackMe, Incident Response</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Windows Server Home Lab</h3>
+            <p>
+                Built a Windows Server 2019 Active Directory environment with domain users,
+                Group Policy, DNS and Windows 11 domain integration.
+            </p>
+
+            <a href="windows-server.html" class="project-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Linux Administration Lab</h3>
+            <p>
+                User management, permissions, networking, Bash commands and Linux administration.
+            </p>
+
+            <a href="linux.html" class="project-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Nmap &amp; Wireshark Lab</h3>
+            <p>
+                Network discovery, service enumeration, packet capture and traffic analysis.
+            </p>
+
+            <a href="nmap.html" class="project-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Sentinel SIEM</h3>
+            <p>
+                Log collection, alert investigation and cloud security monitoring.
+            </p>
+
+            <a href="sentinel.html" class="project-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Splunk SIEM</h3>
+            <p>
+                Log ingestion, searching, dashboards and security investigations.
+            </p>
+
+            <a href="splunk.html" class="project-btn">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>TryHackMe Labs</h3>
+            <p>
+                Practical cybersecurity labs covering Windows, Linux, networking and security fundamentals.
+            </p>
+
+            <a href="tryhackme.html" class="project-btn">View Project</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="certifications">
+
+    <h2 style="text-align:center;">
+        <a href="certifications.html"
+           style="text-decoration:none; color:inherit;">
+            Certifications
+        </a>
+    </h2>
+
+    <div style="text-align:center; margin:20px 0 35px;">
+        <a href="certifications.html" class="btn">
+            View All Certifications
+        </a>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🏆 CompTIA Tech+</h3>
+            <p>Fundamental IT concepts and troubleshooting.</p>
+        </div>
+
+        <div class="card">
+            <h3>🖥 CompTIA A+</h3>
+            <p>Hardware, operating systems, networking and technical support.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 CompTIA Network+</h3>
+            <p>Networking concepts, routing, switching and network security.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔐 CompTIA Security+</h3>
+            <p>Security operations, risk management and incident response.</p>
+        </div>
+
+        <div class="card">
+            <h3>☁ Microsoft Career Essentials in Cybersecurity</h3>
+            <p>Microsoft security tools and cloud security fundamentals.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎯 TryHackMe</h3>
+            <p>Hands-on cybersecurity labs and practical exercises.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: lawrenceazegbea@gmail.com</p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/lawrence-azegbea-81b802159/"
+           target="_blank"
+           rel="noopener noreferrer">
+            View My LinkedIn
+        </a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/lawr24/cyberlawr"
+           target="_blank"
+           rel="noopener noreferrer">
+            View My GitHub
+        </a>
+    </p>
+
+</section>
 
 </body>
+
 </html>

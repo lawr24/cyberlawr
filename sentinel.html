@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Sentinel SIEM Lab | CyberLawr</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/project.css">
+</head>
+
+<body class="project-page">
+
+<nav>
+<h2>CyberLawr</h2>
+<ul><li><a href="index.html">← Home</a></li></ul>
+</nav>
+
+<section>
+<h1>Microsoft Sentinel SIEM Lab</h1>
+<p>From Windows Logon Failure to Automated Security Incident Detection</p>
+</section>
+
+<section>
+<h2>Project Overview</h2>
+<p>One of the most valuable skills for a Security Operations Center (SOC) analyst is understanding how a single Windows security event becomes a meaningful security incident. In this project I built an end-to-end Microsoft Sentinel lab demonstrating the complete detection pipeline—from Windows event collection to automated incident generation.</p>
+</section>
+
+<section>
+<h2>Why I Built This Lab</h2>
+<p>Modern SOC teams cannot manually review every Windows event. This lab demonstrates how Microsoft Sentinel centralizes telemetry, analyzes Windows Security Events, and automatically generates security incidents using custom analytics rules.</p>
+</section>
+
+<section>
+<h2>Lab Environment</h2>
+<ul>
+<li>Microsoft Azure</li>
+<li>Microsoft Sentinel</li>
+<li>Azure Log Analytics Workspace</li>
+<li>Azure Arc</li>
+<li>Azure Monitor Agent (AMA)</li>
+<li>Windows 11 Enterprise Evaluation VM</li>
+<li>Windows Security Event Logs</li>
+<li>Kusto Query Language (KQL)</li>
+</ul>
+</section>
+
+<section>
+<h2>Implementation Summary</h2>
+<p>I deployed a Resource Group, Log Analytics Workspace and Microsoft Sentinel, connected a Windows endpoint using Azure Arc, installed Azure Monitor Agent, configured Windows Security Events, verified SecurityEvent ingestion using KQL, created an analytics rule for failed logons, and successfully generated a Microsoft Sentinel incident.</p>
+</section>
+
+<section>
+<h2>Skills Demonstrated</h2>
+<ul>
+<li>Microsoft Sentinel</li>
+<li>Azure Arc</li>
+<li>Azure Monitor Agent</li>
+<li>Log Analytics Workspace</li>
+<li>KQL</li>
+<li>Windows Event Monitoring</li>
+<li>Threat Detection</li>
+<li>Incident Response</li>
+</ul>
+</section>
+
+<section>
+<h2>Project Screenshots</h2>
+<div class="gallery">
+<figure><img src="assets/images/sentinel/01_azure_Portal_Home.png" alt="Azure Portal Home"><figcaption>Figure 1 — Azure Portal Home.</figcaption></figure>
+<figure><img src="assets/images/sentinel/02_Resource_Group_Created.png" alt="Resource Group Created"><figcaption>Figure 2 — Resource Group Created.</figcaption></figure>
+<figure><img src="assets/images/sentinel/03_Log_Analytical_Workspace_Created.png" alt="Log Analytics Workspace Created"><figcaption>Figure 3 — Log Analytics Workspace Created.</figcaption></figure>
+<figure><img src="assets/images/sentinel/04_Windows_Security_Events_Installed.png" alt="Windows Security Events Connector Installed"><figcaption>Figure 4 — Windows Security Events Connector Installed.</figcaption></figure>
+<figure><img src="assets/images/sentinel/05_Data_Collection_Rule_Connected.png" alt="Data Collection Rule Configured"><figcaption>Figure 5 — Data Collection Rule Configured.</figcaption></figure>
+<figure><img src="assets/images/sentinel/06_Azure_Arc_Onboarding_Success.png" alt="Azure Arc Onboarding Successful"><figcaption>Figure 6 — Azure Arc Onboarding Successful.</figcaption></figure>
+<figure><img src="assets/images/sentinel/07_Azure_Arc_Machine_Connected.png" alt="Azure Arc Machine Connected"><figcaption>Figure 7 — Azure Arc Machine Connected.</figcaption></figure>
+<figure><img src="assets/images/sentinel/08_Azure_Monitor_Agent_Installed.png" alt="Azure Monitor Agent Installed"><figcaption>Figure 8 — Azure Monitor Agent Installed.</figcaption></figure>
+<figure><img src="assets/images/sentinel/09_SecurityEvent_Data_Recieved.png" alt="Security Event Data Received"><figcaption>Figure 9 — Security Event Data Received.</figcaption></figure>
+<figure><img src="assets/images/sentinel/10_Analytics_Rules_Created.png" alt="Analytics Rule Created"><figcaption>Figure 10 — Analytics Rule Created.</figcaption></figure>
+<figure><img src="assets/images/sentinel/10_Failed_Logon_Query_Success.png" alt="KQL Query Detecting Failed Logon Attempts"><figcaption>Figure 11 — KQL Query Detecting Failed Logon Attempts.</figcaption></figure>
+<figure><img src="assets/images/sentinel/11_Sentinel_Incident_Created.png" alt="Microsoft Sentinel Incident Created"><figcaption>Figure 12 — Microsoft Sentinel Incident Created.</figcaption></figure>
+
+</div>
+</section>
+
+<section>
+<h2>Conclusion</h2>
+<p>This project strengthened my understanding of Microsoft Sentinel, Azure monitoring, Windows event collection, KQL queries, and the complete workflow from failed Windows logon attempts to automated incident generation.</p>
+</section>
+
+<section style="text-align:center;">
+<a href="index.html" class="btn">← Back to Portfolio</a>
+</section>
+
+</body>
+</html>
