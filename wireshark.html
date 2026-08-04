@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wireshark Packet Analysis Project | CyberLawr</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/project.css">
+</head>
+
+<body class="project-page">
+
+<nav>
+    <h2>CyberLawr</h2>
+
+    <ul>
+        <li><a href="index.html">← Home</a></li>
+    </ul>
+</nav>
+
+<section>
+
+    <h1>Wireshark Packet Analysis – Validating SMB Enumeration</h1>
+
+    <p>
+        This project demonstrates how I used Wireshark to validate the results
+        obtained from Nmap during a Windows Server 2019 enumeration exercise.
+        Rather than relying solely on automated scanning, I captured and analysed
+        network traffic to verify exactly what occurred during SMB communication.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Project Overview</h2>
+
+    <p>
+        One of the most important lessons I have learned during my cybersecurity
+        journey is that running security tools is only the beginning.
+        Professional analysts validate important findings by examining packet-level
+        evidence. This project combines Nmap enumeration with Wireshark packet
+        analysis to understand how Windows Server services communicate across the network.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Why I Built This Lab</h2>
+
+    <p>
+        I created this home lab to strengthen my understanding of network
+        protocols and to develop practical packet analysis skills. The objective
+        was to move beyond simply reading scan results and instead understand the
+        actual network traffic that produced those results.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Lab Environment</h2>
+
+    <ul>
+        <li>Kali Linux Virtual Machine (Attacker)</li>
+        <li>Windows Server 2019 Virtual Machine (Target)</li>
+        <li>Wireshark</li>
+        <li>Nmap 7.95</li>
+        <li>VirtualBox Home Lab</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Investigation Methodology</h2>
+
+    <ol>
+        <li>Capture live network traffic using Wireshark.</li>
+        <li>Perform Windows Server enumeration using Nmap.</li>
+        <li>Filter captured packets by protocol and port.</li>
+        <li>Inspect TCP handshakes and SMB negotiation.</li>
+        <li>Validate Nmap results using packet-level evidence.</li>
+        <li>Document technical findings professionally.</li>
+    </ol>
+
+</section>
+
+<section>
+
+    <h2>From Nmap Output to Packet-Level Evidence</h2>
+
+    <p>
+        One of the biggest lessons I learned during this project is that running a
+        security tool is only the beginning. The real value comes from
+        understanding why a tool produced its results and verifying those
+        findings yourself.
+    </p>
+
+    <p>
+        During the investigation I focused on the SMB service running on my
+        Windows Server 2019 virtual machine. Using Kali Linux, I combined Nmap
+        enumeration with Wireshark packet captures to understand exactly what was
+        happening on the network.
+    </p>
+
+    <p>
+        My first attempt used an SMB security script that failed during protocol
+        negotiation. Rather than assuming the target machine was misconfigured, I
+        treated the failure as part of the investigation and continued
+        troubleshooting using a different approach.
+    </p>
+
+    <p>
+        After switching to the appropriate SMB2 script, Nmap successfully
+        identified SMB 3.1.1 and reported that message signing was enabled but
+        not required.
+    </p>
+
+    <p>
+        Instead of accepting the scanner's output, I opened the packet capture in
+        Wireshark and examined the SMB negotiation packets. The packet-level
+        evidence confirmed the Nmap findings, demonstrating the importance of
+        validating automated scan results through direct protocol analysis.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Key Findings</h2>
+
+    <ul>
+        <li>Captured and analysed TCP three-way handshakes.</li>
+        <li>Verified SMB negotiation traffic.</li>
+        <li>Confirmed service version detection.</li>
+        <li>Observed HTTP communication.</li>
+        <li>Validated Nmap results using packet captures.</li>
+        <li>Strengthened troubleshooting and protocol analysis skills.</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Skills Demonstrated</h2>
+
+    <ul>
+        <li>Wireshark Packet Analysis</li>
+        <li>Network Traffic Analysis</li>
+        <li>TCP/IP</li>
+        <li>SMB Protocol Analysis</li>
+        <li>HTTP Analysis</li>
+        <li>Nmap Enumeration Validation</li>
+        <li>Troubleshooting</li>
+        <li>Evidence-Based Security Investigation</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Project Screenshots</h2>
+
+    <p>
+        The screenshots below demonstrate the packet analysis process and how
+        Wireshark was used to validate network communications observed during the
+        Windows Server enumeration exercise.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="assets/images/wireshark/01_SMB_TCP_Handshake.png"
+                 alt="SMB TCP Handshake">
+            <figcaption>
+                Figure 1 — TCP three-way handshake establishing an SMB connection.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/wireshark/02_Service_Version_Detection.png"
+                 alt="Service Version Detection">
+            <figcaption>
+                Figure 2 — Wireshark capture supporting Nmap service version detection.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/wireshark/03_SMB_OS_Discovery.png"
+                 alt="SMB OS Discovery">
+            <figcaption>
+                Figure 3 — SMB negotiation traffic used during operating system discovery.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/wireshark/04_RDP_Enum_Encryption.png"
+                 alt="RDP Enumeration">
+            <figcaption>
+                Figure 4 — Packet capture during Remote Desktop Protocol (RDP) enumeration.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/wireshark/05_HTTP_Headers.png"
+                 alt="HTTP Headers">
+            <figcaption>
+                Figure 5 — HTTP communication captured and analysed within Wireshark.
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        This project strengthened my practical understanding of packet analysis,
+        protocol behaviour and evidence-based security investigations. By
+        combining Nmap with Wireshark, I developed a deeper understanding of how
+        network services communicate and how professional analysts validate scan
+        results using real packet captures.
+    </p>
+
+</section>
+
+<section style="text-align:center;">
+
+    <a href="index.html" class="btn">
+        ← Back to Portfolio
+    </a>
+
+</section>
+
+</body>
+</html>
