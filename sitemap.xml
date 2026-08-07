@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://cyberlawr.com/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/certifications.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/windows-server.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/linux.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/nmap.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/wireshark.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/sentinel.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/splunk.html</loc>
+    </url>
+
+    <url>
+        <loc>https://cyberlawr.com/tryhackme.html</loc>
+    </url>
+
+</urlset>
