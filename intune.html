@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Intune Endpoint Security Lab | CyberLawr</title>
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/project.css">
+</head>
+
+<body class="project-page">
+
+<nav>
+    <h2>CyberLawr</h2>
+    <ul>
+        <li><a href="index.html">← Home</a></li>
+    </ul>
+</nav>
+
+<section>
+    <h1>Microsoft Intune Endpoint Security Lab</h1>
+    <p>
+        This project demonstrates practical Microsoft Intune experience through the
+        configuration, deployment and validation of Windows endpoint security policies.
+        The lab focused on managing a Windows 11 Pro device and verifying security
+        controls directly on the endpoint.
+    </p>
+</section>
+
+<section>
+    <h2>Project Overview</h2>
+    <p>
+        Microsoft Intune provides cloud-based endpoint management and security policy
+        deployment. In this project I created and deployed Windows security configuration
+        profiles, monitored their deployment status and validated the resulting controls
+        on a managed Windows endpoint.
+    </p>
+</section>
+
+<section>
+    <h2>Why I Built This Lab</h2>
+    <p>
+        I created this lab to gain practical endpoint management experience beyond
+        certification study. The project demonstrates how security policies can be
+        configured centrally in Intune, applied to a Windows device and then verified
+        at the endpoint.
+    </p>
+</section>
+
+<section>
+    <h2>Lab Environment</h2>
+    <ul>
+        <li>Microsoft Intune</li>
+        <li>Microsoft Entra ID</li>
+        <li>Windows 11 Pro endpoint</li>
+        <li>Windows Settings Catalog</li>
+        <li>Microsoft Defender Firewall</li>
+        <li>Microsoft Defender SmartScreen</li>
+        <li>Windows device lock and inactivity controls</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Project Objectives</h2>
+    <ol>
+        <li>Enroll and manage a Windows endpoint with Microsoft Intune.</li>
+        <li>Create Windows security configuration profiles.</li>
+        <li>Configure Microsoft Defender Firewall settings.</li>
+        <li>Configure Microsoft Defender SmartScreen.</li>
+        <li>Configure Windows inactivity and device lock controls.</li>
+        <li>Monitor policy deployment and verify successful application.</li>
+        <li>Validate security controls directly on the Windows endpoint.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Implementation Summary</h2>
+    <p>
+        I created four Intune configuration profiles covering Windows security baseline
+        controls, Microsoft Defender Firewall, device lock and Microsoft Defender
+        SmartScreen. The policies were assigned to the managed Windows endpoint and
+        successfully reported as applied in Intune.
+    </p>
+    <p>
+        Endpoint validation was then performed using Windows Security and Windows
+        security administration tools to confirm that the configured controls were
+        being enforced on the device.
+    </p>
+</section>
+
+<section>
+    <h2>Security Policies Configured</h2>
+    <ul>
+        <li><strong>Windows Security Baseline Lab</strong> — Windows security configuration and Microsoft Defender controls.</li>
+        <li><strong>Windows Defender Firewall Lab</strong> — Firewall protection enabled across network profiles with restrictive inbound defaults.</li>
+        <li><strong>Windows Device Lock Lab</strong> — Interactive Logon Machine Inactivity Limit configured to 900 seconds.</li>
+        <li><strong>Windows SmartScreen Lab</strong> — Microsoft Defender SmartScreen configured and managed by Intune.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Validation &amp; Results</h2>
+    <p>
+        Intune reported all four configuration profiles as <strong>Succeeded</strong>
+        on the managed Windows endpoint. The Windows device was then checked locally
+        to verify the deployed security controls.
+    </p>
+    <ul>
+        <li>Windows Defender Firewall — enabled for Domain, Private and Public network profiles.</li>
+        <li>Microsoft Defender SmartScreen — enabled and shown as managed by the administrator.</li>
+        <li>Device inactivity limit — configured to 900 seconds and verified through Windows security policy settings.</li>
+        <li>Policy deployment — all four Intune configuration profiles reported successful application.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Challenges &amp; Troubleshooting</h2>
+    <p>
+        During validation, I tested the Windows inactivity control and investigated the
+        difference between an enforced inactivity policy and Windows power-management
+        settings. The inactivity limit was confirmed at 900 seconds, while the device's
+        separate screen, sleep and hibernate timers were reviewed independently.
+    </p>
+    <p>
+        This reinforced the importance of validating both the central Intune policy and
+        the resulting endpoint configuration rather than relying only on deployment status.
+    </p>
+</section>
+
+<section>
+    <h2>Skills Demonstrated</h2>
+    <ul>
+        <li>Microsoft Intune</li>
+        <li>Windows Endpoint Management</li>
+        <li>Microsoft Entra ID</li>
+        <li>Settings Catalog</li>
+        <li>Security Configuration Profiles</li>
+        <li>Microsoft Defender Firewall</li>
+        <li>Microsoft Defender SmartScreen</li>
+        <li>Windows Security Administration</li>
+        <li>Policy Deployment &amp; Monitoring</li>
+        <li>Endpoint Validation &amp; Troubleshooting</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Project Screenshots</h2>
+    <p>
+        The screenshots below demonstrate the deployment and endpoint validation stages
+        of the Microsoft Intune security lab.
+    </p>
+
+    <div class="gallery">
+
+        <figure>
+            <img src="assets/images/intune/01-Intune-Policies-Succeeded.png"
+                 alt="Microsoft Intune policies successfully applied">
+            <figcaption>
+                Figure 1 — Microsoft Intune configuration profiles successfully applied to the managed Windows endpoint.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/intune/02-Windows-Firewall-Verified.png"
+                 alt="Windows Defender Firewall enabled">
+            <figcaption>
+                Figure 2 — Windows Defender Firewall enabled across the Windows network profiles.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/intune/03-Microsoft-Defender-SmartScreen.png"
+                 alt="Microsoft Defender SmartScreen managed by administrator">
+            <figcaption>
+                Figure 3 — Microsoft Defender SmartScreen enabled and managed by the administrator.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/intune/04-Device-Lock-900-Seconds.png"
+                 alt="Windows inactivity limit configured to 900 seconds">
+            <figcaption>
+                Figure 4 — Interactive Logon Machine Inactivity Limit configured to 900 seconds.
+            </figcaption>
+        </figure>
+
+    </div>
+</section>
+
+<section>
+    <h2>Key Lessons Learned</h2>
+    <ul>
+        <li>Security policies must be validated after deployment.</li>
+        <li>Intune deployment status does not replace endpoint-side verification.</li>
+        <li>Windows security controls and power-management settings can operate independently.</li>
+        <li>Centralised endpoint management provides a practical way to enforce security standards.</li>
+        <li>Troubleshooting requires checking both the management platform and the endpoint.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>
+        Building this lab strengthened my understanding of Microsoft Intune, Windows
+        endpoint management and practical security policy deployment. It also improved
+        my ability to configure, monitor and validate security controls across a managed
+        Windows environment.
+    </p>
+</section>
+
+<section style="text-align:center;">
+    <a href="index.html" class="btn">← Back to Portfolio</a>
+</section>
+
+</body>
+</html>
